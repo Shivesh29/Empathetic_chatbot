@@ -8,18 +8,24 @@ It combines:
 A DeBERTa-based emotion embedding model (TACO-style pipeline)
 A contrastive + classification training objective
 A BlenderBot generative model for response generation
+ 
+ 
  Key Features
 Emotion classification from raw text
 Embedding-based emotion space learning
 Cluster + label similarity constraints
 Emotion-conditioned chatbot responses
 27-class emotion detection (GoEmotions dataset)
+ 
+ 
  Dataset Used
 GoEmotions Dataset (Google Research)
 Source: HuggingFace Datasets
 Labels: 27 emotion categories
 Link:
 https://huggingface.co/datasets/go_emotions
+ 
+ 
  Model Architecture
 1. Emotion Encoder (TACO Model)
 Base: microsoft/deberta-v3-small
@@ -32,6 +38,8 @@ Label Similarity Regularization
 3. Generator Model
 facebook/blenderbot-400M-distill
 Conditioned on detected emotion
+ 
+ 
  How to Run
 1. Install dependencies
 pip install -r requirements.txt
